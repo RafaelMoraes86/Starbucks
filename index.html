@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap" rel="stylesheet">
+    <title>StarBucks</title>
+</head>
+
+<body>
+    <div class="circulo"></div>
+
+    <header>
+        <img class="logo" src="./img/logo.png" alt="logo-starbucks" />
+    </header>
+
+    <section>
+        <h1>It's not just Coffe</h1>
+        <h2>It's <span>Starbucks</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga labore quam hic itaque beatae, accusantium
+            ducimus, atque fugit vel at sapiente qui? Ullam facilis exercitationem sint nemo velit omnis.</p>
+        <button>Learn More</button>
+    </section>
+
+    <div class="starbucks">
+        <img src="./img/img1.png" alt="imagem-produto1" class="starbucks1" />
+    </div>
+   
+ 
+
+    <div class="botoes">
+        <img src="./img/thumb1.png" alt="imagem-produto1" class="botão-menu" onclick="trocarImagem ('./img/img1.png'); trocarCor('#017143') "/>
+        <img src="./img/thumb2.png" alt="imagem-produto2" class="botão-menu" onclick="trocarImagem ('./img/img2.png'); trocarCor('#eb7495') "/>
+        <img src="./img/thumb3.png" alt="imagem-produto3" class="botão-menu" onclick="trocarImagem ('./img/img3.png'); trocarCor('#d752b1') "/>
+    </div>
+
+</body>
+
+<script>
+     let imagem = document.querySelector(".starbucks1")
+     let circulo = document.querySelector(".circulo")
+        
+        function trocarImagem(endereco){
+            imagem.src = endereco
+          
+        }
+    
+        function trocarCor(cor){
+            circulo.style.background = cor
+
+        }
+
+</script>
+
+</html>
